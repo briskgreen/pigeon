@@ -7,6 +7,7 @@
 
 #define HOME_PATH getenv("HOME")
 #define CONFIG_FILE ".pigeon/config"
+#define CONFIG_PATH_LEN strlen(HOME_PATH)+strlen(CONFIG_FILE)+2
 
 typedef struct
 {

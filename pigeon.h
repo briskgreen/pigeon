@@ -5,6 +5,9 @@
 #include "base64.h"
 #include "config.h"
 
+#define PIGEON_FILE ".pigeon/"
+#define PIGEON_PATH_LEN strlen(HOME_PATH)+strlen(PIGEON_FILE)+2
+
 typedef struct
 {
 	char *user_name;
