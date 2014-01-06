@@ -17,7 +17,7 @@ unsigned char *base64_encode(unsigned char *str)
 	res=malloc(sizeof(unsigned char)*len+1);
 	res[len]='\0';
 
-	for(i=0,j=0;j<str_len;j+=3,i+=4)
+	for(i=0,j=0;i<len-2;j+=3,i+=4)
 	{
 		res[i]=base64_table[str[j]>>2];
 		res[i+1]=base64_table[(str[j]&0x3)<<4 | (str[j+1]>>4)];
